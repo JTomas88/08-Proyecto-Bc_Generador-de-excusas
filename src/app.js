@@ -22,10 +22,10 @@ function generador() {
     "while I was praying"
   ];
 
-  let quien = who[Math.floor(Math.random() * 4)];
-  let accion = action[Math.floor(Math.random() * 4)];
-  let que = what[Math.floor(Math.random() * 3)];
-  let cuando = when[Math.floor(Math.random() * 5)];
+  let quien = who[Math.floor(Math.random() * who.length)];
+  let accion = action[Math.floor(Math.random() * action.length)];
+  let que = what[Math.floor(Math.random() * what.length)];
+  let cuando = when[Math.floor(Math.random() * when.length)];
 
   excusaFinal += quien + " " + accion + " " + que + " " + cuando;
   console.log(excusaFinal);
